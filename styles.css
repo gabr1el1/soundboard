@@ -50,6 +50,7 @@ header{
     transition: 0.3s;
     font-size: larger;
     color: rgb(179, 0, 255);
+    box-shadow:0 0 20px  rgba(179, 0, 255, 0.768);
 }
 footer{
     font-size: large;
