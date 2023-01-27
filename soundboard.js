@@ -21,127 +21,93 @@ function keysPressed(e){
     if(!repeatedEvent){
         let letter = e.key.toLowerCase();
         let audio;
+        playSound(letter);
         repeatedEvent = true;
-        keySelected = document.getElementById(letter);
-        desc = keySelected.querySelector('.desc');
-        switch (letter){
-            case "a":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/omg.mp3");
-                audio.play();
-                break;
-            case "s":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/wth.mp3");
-                audio.play();
-                break;
-            case "d":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/aah.mp3");
-                audio.play();
-                break;
-            case "f":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/waitWhat.mp3");
-                audio.play();
-                break;
-            case "g":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/brazil.mp3");
-                audio.play();
-                break;
-            case "h":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/dtyoudead.mp3");
-                audio.play();
-                break;
-            case "j":
-                keySelected.classList.add('pressed');
-                desc.classList.add('.pressed');
-                audio = new Audio("./sounds/boom.mp3");
-                audio.play();
-                break;
-            case "k":
-                keySelected.classList.add('pressed');
-                audio = new Audio("./sounds/bonk.mp3");
-                audio.play();
-                desc.classList.add('.pressed');
-                break;
-            case "l":
-                keySelected.classList.add('pressed');
-                audio = new Audio("./sounds/pianoDross.mp3");
-                audio.play();
-                desc.classList.add('.pressed');
-                break;
-    }
+        
 }};
-
+//function for the clics
 function keyClicked(letter){
     letter = letter.toLowerCase();
-    console.log(letter);
-    keySelected = document.getElementById(letter);
-    desc = keySelected.querySelector('.desc');
+    playSound(letter);
+    
+}
+
+function playSound(letter){
     switch (letter){
         case "a":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/omg.mp3");
             audio.play();
             break;
         case "s":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/wth.mp3");
             audio.play();
             break;
         case "d":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/aah.mp3");
             audio.play();
             break;
         case "f":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/waitWhat.mp3");
             audio.play();
             break;
         case "g":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/brazil.mp3");
             audio.play();
             break;
         case "h":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/dtyoudead.mp3");
             audio.play();
             break;
         case "j":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
             audio = new Audio("./sounds/boom.mp3");
             audio.play();
             break;
         case "k":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             audio = new Audio("./sounds/bonk.mp3");
             audio.play();
             desc.classList.add('.pressed');
             break;
         case "l":
+            keySelected = document.getElementById(letter);
+            desc = keySelected.querySelector('.desc');
             keySelected.classList.add('pressed');
             audio = new Audio("./sounds/pianoDross.mp3");
             audio.play();
             desc.classList.add('.pressed');
             break;
-    }
-}
+        default:
+            keySelected = document.getElementById("a");
 
+        }
+}
