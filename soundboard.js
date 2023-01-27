@@ -3,15 +3,17 @@ const container= document.querySelector('.container');
 let keySelected,desc;
 let repeatedEvent = false;
 container.addEventListener('keydown',keysPressed);
-container.addEventListener('keyup',unablePressed);
+container.addEventListener('keyup',unableSelected);
 container.focus();
 
 keys.forEach(key=>{
-    key.addEventListener('mousedown',()=>keyClicked(key.id));
-    key.addEventListener('mouseup',unablePressed);
+    key.addEventListener('mousedown',()=>keyPointed(key.id));
+    key.addEventListener('mouseup',unableSelected);
+    key.addEventListener('pointerdown',()=>keyPointed(key.id));
+    key.addEventListener('pointerup',unableSelected);
 });
 
-function unablePressed(){
+function unableSelected(){
     keySelected.classList.remove('pressed');
     desc.classList.remove('pressed');
     repeatedEvent = false;
@@ -26,7 +28,7 @@ function keysPressed(e){
         
 }};
 //function for the clics
-function keyClicked(letter){
+function keyPointed(letter){
     letter = letter.toLowerCase();
     playSound(letter);
     
