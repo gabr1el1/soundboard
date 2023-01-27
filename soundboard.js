@@ -28,54 +28,54 @@ function keysPressed(e){
             case "a":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/omg.mp3");
+                audio = new Audio("./sounds/omg.mp3");
                 audio.play();
                 break;
             case "s":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/wth.mp3");
+                audio = new Audio("./sounds/wth.mp3");
                 audio.play();
                 break;
             case "d":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/aah.mp3");
+                audio = new Audio("./sounds/aah.mp3");
                 audio.play();
                 break;
             case "f":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/waitWhat.mp3");
+                audio = new Audio("./sounds/waitWhat.mp3");
                 audio.play();
                 break;
             case "g":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/brazil.mp3");
+                audio = new Audio("./sounds/brazil.mp3");
                 audio.play();
                 break;
             case "h":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/dtyoudead.mp3");
+                audio = new Audio("./sounds/dtyoudead.mp3");
                 audio.play();
                 break;
             case "j":
                 keySelected.classList.add('pressed');
                 desc.classList.add('.pressed');
-                audio = new Audio("../sounds/boom.mp3");
+                audio = new Audio("./sounds/boom.mp3");
                 audio.play();
                 break;
             case "k":
                 keySelected.classList.add('pressed');
-                audio = new Audio("../sounds/bonk.mp3");
+                audio = new Audio("./sounds/bonk.mp3");
                 audio.play();
                 desc.classList.add('.pressed');
                 break;
             case "l":
                 keySelected.classList.add('pressed');
-                audio = new Audio("../sounds/pianoDross.mp3");
+                audio = new Audio("./sounds/pianoDross.mp3");
                 audio.play();
                 desc.classList.add('.pressed');
                 break;
@@ -91,54 +91,54 @@ function keyClicked(letter){
         case "a":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/omg.mp3");
+            audio = new Audio("./sounds/omg.mp3");
             audio.play();
             break;
         case "s":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/wth.mp3");
+            audio = new Audio("./sounds/wth.mp3");
             audio.play();
             break;
         case "d":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/aah.mp3");
+            audio = new Audio("./sounds/aah.mp3");
             audio.play();
             break;
         case "f":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/waitWhat.mp3");
+            audio = new Audio("./sounds/waitWhat.mp3");
             audio.play();
             break;
         case "g":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/brazil.mp3");
+            audio = new Audio("./sounds/brazil.mp3");
             audio.play();
             break;
         case "h":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/dtyoudead.mp3");
+            audio = new Audio("./sounds/dtyoudead.mp3");
             audio.play();
             break;
         case "j":
             keySelected.classList.add('pressed');
             desc.classList.add('.pressed');
-            audio = new Audio("../sounds/boom.mp3");
+            audio = new Audio("./sounds/boom.mp3");
             audio.play();
             break;
         case "k":
             keySelected.classList.add('pressed');
-            audio = new Audio("../sounds/bonk.mp3");
+            audio = new Audio("./sounds/bonk.mp3");
             audio.play();
             desc.classList.add('.pressed');
             break;
         case "l":
             keySelected.classList.add('pressed');
-            audio = new Audio("../sounds/pianoDross.mp3");
+            audio = new Audio("./sounds/pianoDross.mp3");
             audio.play();
             desc.classList.add('.pressed');
             break;
