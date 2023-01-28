@@ -2,9 +2,8 @@ const keys = document.querySelectorAll('.key');
 const container= document.querySelector('.container');
 let keySelected,desc;
 let repeatedEvent = false;
-container.addEventListener('keydown',keysPressed);
-container.addEventListener('keyup',unableSelected);
-container.focus();
+window.addEventListener('keydown',keysPressed);
+window.addEventListener('keyup',unableSelected);
 
 keys.forEach(key=>{
     key.addEventListener('mousedown',()=>keyPointed(key.id));
